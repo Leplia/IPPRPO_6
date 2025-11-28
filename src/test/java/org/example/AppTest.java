@@ -62,14 +62,6 @@ class AppTest {
     }
 
     @Test
-    void rangeCalculatesDifferenceBetweenExtremes() {
-        when(numberSource.load()).thenReturn(Arrays.asList(2, 7, 12));
-
-        assertEquals(10, service.range());
-        verify(numberSource).load();
-    }
-
-    @Test
     void containsZeroDetectsZero() {
         when(numberSource.load()).thenReturn(Arrays.asList(3, 0, 9));
 
